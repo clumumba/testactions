@@ -1,8 +1,8 @@
-name: Terraform_sequence
+name: Terraform
 on: [push]
 env: 
-  ACCESS_KEY : ${{ secrets.ACCESS_KEY }}
-  SECRET_KEY: ${{ secrets.SECRET_KEY }}
+  AWS_ACCESS_KEY_ID : ${{ secrets.ACCESS_KEY }}
+  AWS_SECRET_KEY_ID : ${{ secrets.SECRET_KEY }}
 
 jobs:
   terraform:
